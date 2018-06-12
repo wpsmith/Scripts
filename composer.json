@@ -5,7 +5,7 @@
     "wordpress",
     "widgets"
   ],
-  "homepage": "https://github.com/wpsmith/WPS-Scripts",
+  "homepage": "https://github.com/wpsmith/Scripts",
   "license": "GPL-2.0+",
   "authors": [
     {
@@ -16,7 +16,7 @@
     }
   ],
   "support": {
-    "issues": "https://github.com/wpsmith/WPS-Scripts/issues"
+    "issues": "https://github.com/wpsmith/Scripts/issues"
   },
   "require": {
     "php": ">=5.2.4",
