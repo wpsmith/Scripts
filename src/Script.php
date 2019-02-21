@@ -132,7 +132,11 @@ if ( ! class_exists( __NAMESPACE__ . '\Script' ) ) {
 		 * @return string
 		 */
 		public static function get_suffix() {
-			return ( ( defined( 'STYLE_DEBUG' ) && STYLE_DEBUG ) || ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ) ? '' : '.min';
+			return (
+				( defined( 'STYLE_DEBUG' ) && STYLE_DEBUG ) ||
+				( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ||
+				( defined( 'WP_DEBUG' ) && WP_DEBUG && ! defined( 'SCRIPT_DEBUG' ) && ! defined( 'STYLE_DEBUG' ) )
+			) ? '' : '.min';
 		}
 
 		/**
