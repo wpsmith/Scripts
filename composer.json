@@ -20,7 +20,7 @@
   },
   "require": {
     "php": ">=7.2.0",
-    "wpsmith/script": "^0.0.1",
+    "wpsmith/script": "^0.0.2",
     "wpsmith/singleton": "^1.0.2"
   },
   "autoload": {
